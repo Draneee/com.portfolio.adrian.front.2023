@@ -1,0 +1,12 @@
+.logoFooter {
+  /* animation: rotationLogo 30s linear infinite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotationLogo {
+  100% {
+    transform: rotate(360deg);
+  }
+}

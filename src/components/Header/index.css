@@ -1,0 +1,76 @@
+.logoPortfolio:hover div {
+    transform: rotate(360deg);
+    transition: transform 2s ease-in-out;
+}
+
+.navBar {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.titleMenu {
+    display: none;
+    border-radius: 10px;
+}
+
+.btnOpenMenu {
+    display: none;
+}
+
+.backgroundMenu {
+    background: rgba(5, 5, 5, 0.014);
+    backdrop-filter: blur(2px);
+}
+
+.nav__links {
+    border-bottom: 2px solid transparent;
+}
+
+
+.start-home {
+    position: absolute;
+    width: 0;
+    z-index: -1;
+    border-radius: 5px;
+    transition: left .5s, opacity .5s;
+    height: 75%;
+    left: 0;
+    top: 0;
+    background-color: rgba(168, 168, 168, 0.199);
+    bottom: 0;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .btnOpenMenu {
+        display: block;
+    }
+
+    .navBar {
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        z-index: 100;
+        transition: opacity .3s;
+        left: 0;
+        width: 96%;
+        margin: auto;
+        padding: 35px 20px;
+        right: 0;
+    }
+
+    .titleMenu {
+        display: block;
+    }
+
+    .nav__links {
+        border-bottom: 1px solid rgb(78, 78, 78);
+        border-radius: none;
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    .start-home {
+        display: none;
+    }
+}
+
